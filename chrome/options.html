@@ -1,8 +1,9 @@
 <html>
 	<head>
-		<script src="./lib/jquery-1.4.2.min.js"></script>
 		<meta charset="utf-8">
 		<title>TabCloud Options</title>
+		<script src="./lib/jquery-3.7.1.min.js"></script>
+		<script src="options.js"></script>
 		<style>
 			body {
 				margin: 10px;
@@ -66,18 +67,7 @@
 				float: left;
 				width: 70%;
 			}
-		</style>
-		<script>
-			$(function () {
-				$('input[name="openin"][value="'+localStorage.openin+'"]').attr('checked','checked');
-				$('input[name="deleteconfirm"][value="'+localStorage.deleteconfirm+'"]').attr('checked','checked');
-				$('input[name="encryption"][value="'+localStorage.encryption+'"]').attr('checked','checked');
-				
-				$('input[type="radio"]').change(function (e) {
-					localStorage[$(this).attr('name')] = $(this).attr('value')
-				});
-			});
-		</script>
+			</style>
 	</head>
 <body style="font-family: Arial; font-size: 84%;">
     <div id="header"><h1>TabCloud</h1></div>
